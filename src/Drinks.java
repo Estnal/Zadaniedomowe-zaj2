@@ -18,9 +18,23 @@ public class Drinks {
         products1.product2 = "Shot wódki";
         products1.product3 = "Shveepes";
 
-        System.out.println("Produkt1: " + products1.product1);
-        System.out.println("Produkt2: " + products1.product2);
-        System.out.println("Produkt3: " + products1.product3);
+        Quantity quantity1 = new Quantity();
+        quantity1.prod1 = 15;
+        quantity1.prod2 = 20;
+        quantity1.prod3 = 40;
+
+        System.out.println("Produkt 1: " + products1.product1);
+        System.out.println("Produkt 2: " + products1.product2);
+        System.out.println("Produkt 3: " + products1.product3);
+
+        System.out.println("Ilość pierwszego produnktu: " + quantity1.prod1 + "ml");
+        System.out.println("Ilość drugiego produktu: " + quantity1.prod2 + "ml");
+        System.out.println("Ilość treciego produktu: " + quantity1.prod3 + "ml");
+
+        int quantSum = quantity1.prod1 + quantity1.prod2 + quantity1.prod3;
+
+        System.out.println("Suma produktów: " + quantSum + "ml");
+
 
         System.out.println("/----------SEX ON THE BEACH----------/");
 
@@ -38,9 +52,23 @@ public class Drinks {
         products2.product2 = "Shveepes brzoskwiniowy";
         products2.product3 = "Sok pomarańczowy";
 
-        System.out.println("Produkt1: " + products2.product1);
-        System.out.println("Produkt2: " + products2.product2);
-        System.out.println("Produkt3: " + products2.product3);
+        Quantity quantity2 = new Quantity();
+        quantity2.prod1 = 20;
+        quantity2.prod2 = 30;
+        quantity2.prod3 = 30;
+
+        System.out.println("Produkt 1: " + products2.product1);
+        System.out.println("Produkt 2: " + products2.product2);
+        System.out.println("Produkt 3: " + products2.product3);
+
+        System.out.println("Ilość pierwszego produktu: " + quantity2.prod1 + "ml");
+        System.out.println("Ilość drugiego produktu: " + quantity2.prod2 + "ml");
+        System.out.println("Ilość trzeciego produktu: " + quantity2.prod3 + "ml");
+
+        int qanSum = quantity2.prod1 + quantity2.prod2 + quantity2.prod3;
+
+        System.out.println("Suma produktów: " + qanSum + "ml");
+
 
         System.out.println("/---------------ICETEA---------------/");
 
@@ -54,15 +82,32 @@ public class Drinks {
         System.out.println("Posiada alkohol: " + icetea1.alcohol);
 
         Products products3 = new Products();
-        products3.product1 = "Brzoswkinia";
+        products3.product1 = "Sok Brzoswkinia";
         products3.product2 = "Woda";
         products3.product3 = "Lód";
 
-        System.out.println("Produkt1: " + products3.product1);
-        System.out.println("Produkt2: " + products3.product2);
-        System.out.println("Produkt3: " + products3.product3);
+        System.out.println("Produkt 1: " + products3.product1);
+        System.out.println("Produkt 2: " + products3.product2);
+        System.out.println("Produkt 3: " + products3.product3);
 
-        
+        Quantity quantity3 = new Quantity();
+        quantity3.prod1 = 25;
+        quantity3.prod2 = 30;
+        quantity3.prod3 = 5;
+
+        int qnSum = quantity3.prod1 + quantity3.prod2 + quantity3.prod3;
+
+        System.out.println("Ilość pierwszego produktu: " + quantity3.prod1 + "ml");
+        System.out.println("Ilośc drugiego produktu: " + quantity3.prod2 + "ml");
+        System.out.println("Ilość trzeciego produktu: " + quantity3.prod3 + "ml");
+
+        System.out.println("Suma produktów: " + qnSum + "ml");
+
+
+
+
+
+
 
 
 
