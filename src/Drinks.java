@@ -2,10 +2,19 @@ import java.sql.SQLOutput;
 
 public class Drinks {
     public static void main(String[] args) {
-        Mohito mohito1 = new Mohito();
+        Drink mohito1 = new Drink();
         mohito1.title = "Mohito";
         mohito1.prize = 20;
         mohito1.alcohol = true;
+
+        mohito1.ingredient1.name = "Syrop miętowy";
+        mohito1.ingredient1.quantity = 15;
+        mohito1.ingredient2.name = "Shot wódki";
+        mohito1.ingredient2.quantity = 20;
+        mohito1.ingredient3.name = "Shveepes";
+        mohito1.ingredient3.quantity = 40;
+
+
 
         System.out.println("/---------------MOHITO---------------/");
 
@@ -13,32 +22,23 @@ public class Drinks {
         System.out.println("Cena: " + mohito1.prize + "zł");
         System.out.println("Posiada alkohol: " +  mohito1.alcohol);
 
-        Products products1 = new Products();
-        products1.product1 = "Syrop miętowy";
-        products1.product2 = "Shot wódki";
-        products1.product3 = "Shveepes";
 
-        Quantity quantity1 = new Quantity();
-        quantity1.prod1 = 15;
-        quantity1.prod2 = 20;
-        quantity1.prod3 = 40;
+        System.out.println("Produkt 1: " + mohito1.ingredient1.name);
+        System.out.println("Produkt 2: " + mohito1.ingredient2.name);
+        System.out.println("Produkt 3: " + mohito1.ingredient3.name);
 
-        System.out.println("Produkt 1: " + products1.product1);
-        System.out.println("Produkt 2: " + products1.product2);
-        System.out.println("Produkt 3: " + products1.product3);
+        System.out.println("Ilość pierwszego produnktu: " + mohito1.ingredient1.quantity + "ml");
+        System.out.println("Ilość drugiego produktu: " + mohito1.ingredient2.quantity + "ml");
+        System.out.println("Ilość treciego produktu: " + mohito1.ingredient3.quantity + "ml");
 
-        System.out.println("Ilość pierwszego produnktu: " + quantity1.prod1 + "ml");
-        System.out.println("Ilość drugiego produktu: " + quantity1.prod2 + "ml");
-        System.out.println("Ilość treciego produktu: " + quantity1.prod3 + "ml");
-
-        int quantSum = quantity1.prod1 + quantity1.prod2 + quantity1.prod3;
+        int quantSum = mohito1.ingredient1.quantity + mohito1.ingredient2.quantity + mohito1.ingredient3.quantity;
 
         System.out.println("Suma produktów: " + quantSum + "ml");
 
 
         System.out.println("/----------SEX ON THE BEACH----------/");
 
-        SOTB sotb1 = new SOTB();
+        Drink sotb1 = new Drink();
         sotb1.title ="Sex on the beach";
         sotb1.prize = 22;
         sotb1.alcohol = true;
@@ -47,32 +47,31 @@ public class Drinks {
         System.out.println("Cena: " + sotb1.prize + "zł");
         System.out.println("Posiada alkohol: " + sotb1.alcohol);
 
-        Products products2 = new Products();
-        products2.product1 = "Shot wódki";
-        products2.product2 = "Shveepes brzoskwiniowy";
-        products2.product3 = "Sok pomarańczowy";
+        sotb1.ingredient1.name = "Shot wódki";
+        sotb1.ingredient1.quantity = 20;
+        sotb1.ingredient2.name = "Shveepes brzoskwiniowy";
+        sotb1.ingredient2.quantity = 30;
+        sotb1.ingredient3.name = "Sok pomarańczowy";
+        sotb1.ingredient3.quantity = 30;
 
-        Quantity quantity2 = new Quantity();
-        quantity2.prod1 = 20;
-        quantity2.prod2 = 30;
-        quantity2.prod3 = 30;
 
-        System.out.println("Produkt 1: " + products2.product1);
-        System.out.println("Produkt 2: " + products2.product2);
-        System.out.println("Produkt 3: " + products2.product3);
 
-        System.out.println("Ilość pierwszego produktu: " + quantity2.prod1 + "ml");
-        System.out.println("Ilość drugiego produktu: " + quantity2.prod2 + "ml");
-        System.out.println("Ilość trzeciego produktu: " + quantity2.prod3 + "ml");
+        System.out.println("Produkt 1: " + sotb1.ingredient1.name);
+        System.out.println("Produkt 2: " + sotb1.ingredient2.name);
+        System.out.println("Produkt 3: " + sotb1.ingredient3.name);
 
-        int qanSum = quantity2.prod1 + quantity2.prod2 + quantity2.prod3;
+        System.out.println("Ilość pierwszego produktu: " + sotb1.ingredient1.quantity + "ml");
+        System.out.println("Ilość drugiego produktu: " + sotb1.ingredient2.quantity + "ml");
+        System.out.println("Ilość trzeciego produktu: " + sotb1.ingredient3.quantity + "ml");
+
+        int qanSum = sotb1.ingredient1.quantity + sotb1.ingredient2.quantity + sotb1.ingredient3.quantity ;
 
         System.out.println("Suma produktów: " + qanSum + "ml");
 
 
         System.out.println("/---------------ICETEA---------------/");
 
-        Icetea icetea1 = new Icetea();
+        Drink icetea1 = new Drink();
         icetea1.title = "Icetea";
         icetea1.prize = 10;
         icetea1.alcohol = false;
@@ -81,25 +80,24 @@ public class Drinks {
         System.out.println("Cena: " + icetea1.prize);
         System.out.println("Posiada alkohol: " + icetea1.alcohol);
 
-        Products products3 = new Products();
-        products3.product1 = "Sok Brzoswkinia";
-        products3.product2 = "Woda";
-        products3.product3 = "Lód";
+        icetea1.ingredient1.name = "Sok Brzoskwiniowy";
+        icetea1.ingredient1.quantity = 25;
+        icetea1.ingredient2.name = "Woda";
+        icetea1.ingredient2.quantity = 30;
+        icetea1.ingredient3.name = "Lód";
+        icetea1.ingredient3.quantity = 5;
 
-        System.out.println("Produkt 1: " + products3.product1);
-        System.out.println("Produkt 2: " + products3.product2);
-        System.out.println("Produkt 3: " + products3.product3);
 
-        Quantity quantity3 = new Quantity();
-        quantity3.prod1 = 25;
-        quantity3.prod2 = 30;
-        quantity3.prod3 = 5;
+        System.out.println("Produkt 1: " + icetea1.ingredient1.name);
+        System.out.println("Produkt 2: " + icetea1.ingredient2.name);
+        System.out.println("Produkt 3: " + icetea1.ingredient3.name);
 
-        int qnSum = quantity3.prod1 + quantity3.prod2 + quantity3.prod3;
 
-        System.out.println("Ilość pierwszego produktu: " + quantity3.prod1 + "ml");
-        System.out.println("Ilośc drugiego produktu: " + quantity3.prod2 + "ml");
-        System.out.println("Ilość trzeciego produktu: " + quantity3.prod3 + "ml");
+        int qnSum = icetea1.ingredient1.quantity + icetea1.ingredient2.quantity + icetea1.ingredient3.quantity;
+
+        System.out.println("Ilość pierwszego produktu: " + icetea1.ingredient1.quantity + "ml");
+        System.out.println("Ilośc drugiego produktu: " + icetea1.ingredient2.quantity + "ml");
+        System.out.println("Ilość trzeciego produktu: " + icetea1.ingredient3.quantity + "ml");
 
         System.out.println("Suma produktów: " + qnSum + "ml");
 
